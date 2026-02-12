@@ -1,0 +1,33 @@
+[project]
+name = "sat-imagery-pipeline-16"
+version = "1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "napari",
+    "pyqt6",
+    "magicgui",
+    "numpy",
+    "tifffile",
+    "imagecodecs",
+    "torch",
+    "diffusers",
+    "transformers",
+    "opencv-contrib-python",
+    "scipy",
+    "scikit-image",
+    "peft",
+    "xformers",
+    "rasterio",
+    "gdal",
+    "torchvision>=0.25.0",
+    "huggingface-hub>=1.3.3",
+    "scikit-learn>=1.8.0",
+    "sahi>=0.11.36",
+    "ultralytics>=8.4.6",
+]
+
+[tool.uv]
+override-dependencies = [
+    # Redirect any opencv-python requests to opencv-contrib-python
+    "opencv-python>=0.0.0 ; sys_platform == 'never'",
+]

@@ -1,0 +1,37 @@
+# Data directory - ignore most, allow samples (tracked with Git LFS)
+data/*
+!data/jasraj/
+!data/marcin/
+!data/rafael/
+!data/stan/
+
+# Ignore most member data, keep only samples
+data/marcin/*
+!data/marcin/train_0.tif
+!data/marcin/train_63.tif
+
+data/rafael/*
+!data/rafael/WV3/
+!data/rafael/Saliency Object Detection/
+data/rafael/WV3/*
+!data/rafael/WV3/Explorer.kml
+
+data/stan/*
+!data/stan/train_0.png
+!data/stan/train_10.png
+!data/stan/train_20.png
+!data/stan/train_30.png
+!data/stan/train_40.png
+
+__pycache__/
+*.pyc
+.venv/
+*.lock
+.idea/
+external/
+members/.DS_Store
+*.zip
+*.ckpt
+*.pt
+test_data/
+.DS_Store
