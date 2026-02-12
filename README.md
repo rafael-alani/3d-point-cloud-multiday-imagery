@@ -1,5 +1,4 @@
-# Final Project Group 16
-
+# Complex Applied Image Processing Pipeline for Satellite Imagery 
 ## Setup
 
 Use python dependency manager, like uv (https://github.com/astral-sh/uv) or conda. For uv:
